@@ -20,7 +20,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\SomeClass.cpp" />
+    <ClCompile Include="src\Task.cpp" />
     <ClCompile Include="src\UltiEngine.cpp" />
+    <ClCompile Include="src\Worker.cpp" />
+    <ClCompile Include="src\WorkPool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\SomeClass.h" />
+    <ClInclude Include="src\Task.h" />
+    <ClInclude Include="src\Worker.h" />
+    <ClInclude Include="src\WorkPool.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -115,6 +125,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)Externals\include;$(ProjectDir)include;</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
